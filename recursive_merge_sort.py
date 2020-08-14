@@ -1,11 +1,11 @@
-def rec_func(arr):
+def merge_sort(arr):
     #bottom condition
     if len(arr) == 1:
         return arr
     # splitting the array in half        
     middle = int(len(arr) / 2)
-    left = rec_func(arr[:middle])
-    right = rec_func(arr[middle:])
+    left = merge_sort(arr[:middle])
+    right = merge_sort(arr[middle:])
     # recombine and sort array
     temp_arr = left + right
     sorted_arr = []
@@ -17,5 +17,3 @@ def rec_func(arr):
         sorted_arr.append(lowest)
         temp_arr.remove(lowest)
     return sorted_arr
-
-print(rec_func(['z','x','a','b','t']))

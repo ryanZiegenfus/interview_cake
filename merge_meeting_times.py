@@ -1,3 +1,4 @@
+from recursive_merge_sort import merge_sort
 # Your company built an in-house calendar tool called HiCal.
 # You want to add a feature to see the times in a day when everyone is available.
 
