@@ -1,4 +1,6 @@
-def reverse_list(arr):
+arr = ['a','b','c','d','e','f','g','h']
+def reverse_list():
+    global arr
     box = ''
     for i in range(0, int(len(arr)/2)):
         box = arr[i]
@@ -6,4 +8,4 @@ def reverse_list(arr):
         arr[len(arr) - 1 - i] = box
     return arr
 
-print(reverse_list(['a','b','c','d','e','f','g','h']))
+reverse_list()
